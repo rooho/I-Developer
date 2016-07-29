@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cc.rooho.aidlidoyoudo.server">
+    <application
+        android:allowBackup="true"
+        android:label="Service App"
+        android:supportsRtl="true">
+
+        <service android:name="cc.rooho.aidlidoyoudo.server.PollingRequestService"
+            android:process=":remote"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cc.rooho.aidlidoyoudo.server.polling_request_service" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
