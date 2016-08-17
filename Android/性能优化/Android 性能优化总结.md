@@ -47,7 +47,7 @@
 ```
 ###一些观点
 ```text
-- 高效代码 ≠ 更好代码 ≠ 高质量代码（易修改，易扩充，易维护）
+- 高效代码 ≠ 更好代码 ≠ 高质量代码(易修改，易扩充，易维护)
 - 80/20 法则：4%的代码占用了50%以上的运行时间
 - 随时随地进行优化 **==>** 将陷入无休止的优化泥潭
 - 开发阶段前期：功能都未实现，何谈优化，但在设计的时候，需要考虑到对应风险。
@@ -96,7 +96,7 @@ Log.d("Performance", "Load media info end, Total Time: " + (System.currentTimeMi
 ```
  * 使用性能分析工具：
 ```text
-Traceview（参考：Android性能调优工具TraceView介绍）
+Traceview(参考：Android性能调优工具TraceView介绍)
 Monkey
 MonkeyRunner
 ```
@@ -105,7 +105,7 @@ MonkeyRunner
 
 ##如何优化？
 优化本身是一个很大的主题，我这是主要是针对于Android平台来说的。个人认为，优化可以分成好几部分：
-一、是JAVA语法层次通用的优化，如尽量使用局部变量（栈变量），IO缓冲等。
+一、是JAVA语法层次通用的优化，如尽量使用局部变量(栈变量)，IO缓冲等。
 二、是通用的Android性能优化，如同步改异步，各种缓存的使用等
 三、是应用程序内部的性能优化，如内部逻辑、数据插入及查找、数据结构的安排与组织等
 **以下部分针对于上述3种类型，分别进行简要说明**
@@ -210,7 +210,7 @@ Key Point
 - 用静态代替虚拟
 - 避免内部的 Getters/Setters
 - 对常量使用 Static Final修饰符
-- 使用改进的 For 循环语法（for-each）
+- 使用改进的 For 循环语法(for-each)
 - 在有内部类的情况考虑使用包权限来替代私有访问
 - 避免使用浮点数
 - 了解并使用类库
@@ -237,7 +237,7 @@ Key Point
  * 使用 ListView、GridView 的 View 缓存
  * 使用 Message 自身的缓存，避免重复创建 Message 实例
  * 线程池
- * 数据池（可参考 Message Pool 的实现方式）
+ * 数据池(可参考 Message Pool 的实现方式)
  * ……
 * 数据库优化
  * SQL 优化
