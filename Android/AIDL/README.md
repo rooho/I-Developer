@@ -29,7 +29,7 @@ parcelable PollingResult;
 **## 创建服务 Module :**
 PollingRequestService.java
 ```java
-public class PollingRequestService.java extends Service {
+public class PollingRequestService extends Service {
     private AIDLPollingRequest.Stub mPollingRequestBinder = new AIDLPollingRequest.Stub(){
         @Override
         public void pollingRequest(int code, AIDLPollingRequestCallback listener) throws RemoteException {
